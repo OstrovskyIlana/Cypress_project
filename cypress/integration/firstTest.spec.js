@@ -1,41 +1,41 @@
 
 ///<reference types= "Cypress"/>
+//Comment
+it('by ID', () => {
 
-// it('by ID', () => {
+        cy.visit("https://www.facebook.com/")
+        cy.get("#email")
+    })
 
-//         cy.visit("https://www.facebook.com/")
-//         cy.get("#email")
-//     })
+    it('by Class', () => {
 
-//     it('by Class', () => {
+        cy.visit("https://docs.cypress.io/examples/examples/tutorials.html#2-Text-inputs")
+        cy.get(".ds-input")
+    })   
 
-//         cy.visit("https://docs.cypress.io/examples/examples/tutorials.html#2-Text-inputs")
-//         cy.get(".ds-input")
-//     })   
+    it('by Tag', () => {
 
-//     it('by Tag', () => {
+        cy.visit("https://docs.cypress.io/examples/examples/tutorials.html#2-Text-inputs")
+        cy.get("nav")
+    })  
 
-//         cy.visit("https://docs.cypress.io/examples/examples/tutorials.html#2-Text-inputs")
-//         cy.get("nav")
-//     })  
+    it('by Tag value' , () => {
 
-//     it('by Tag value' , () => {
+        cy.visit("https://www.facebook.com/")
+        cy.get('[name="pass"]')
+    })  
 
-//         cy.visit("https://www.facebook.com/")
-//         cy.get('[name="pass"]')
-//     })  
+    it('by different Types ' , () => {
 
-//     it('by different Types ' , () => {
+        cy.visit("https://www.facebook.com/")
+        cy.get('[name="pass"][type="password"]')
+    })  
 
-//         cy.visit("https://www.facebook.com/")
-//         cy.get('[name="pass"][type="password"]')
-//     })  
+    it.only('by Contains Name ' , () => {
 
-//     it.only('by Contains Name ' , () => {
-
-//         cy.visit("https://next.privat24.ua/")
-//         cy.get('*[class^="card"]')
-//     })  
+        cy.visit("https://next.privat24.ua/")
+        cy.get('*[class^="card"]')
+    })  
  
        it.only('using Get with Find and Eq' , () => {
 
